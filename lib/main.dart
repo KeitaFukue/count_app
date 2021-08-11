@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 void main() {
   runApp(CountPage());
@@ -14,14 +15,13 @@ class _CountPageState extends State<CountPage> {
   int _counter = 0;
   bool _flag = true;
   bool _lightFlag = true;
+  AudioCache _player = AudioCache();
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: _lightFlag ? ThemeData.light(
-
-      ):ThemeData.dark(),
+      theme: _lightFlag ? ThemeData.light():ThemeData.dark(),
       home: Scaffold(
         appBar: AppBar(
           title: Text('カウンター'),
@@ -31,7 +31,6 @@ class _CountPageState extends State<CountPage> {
             children: [
               Text(
                 _flag ? '$_counter':'10回も押すな',
-
               ),
               ElevatedButton(
                   onPressed: (){
@@ -48,6 +47,12 @@ class _CountPageState extends State<CountPage> {
                     elevation: 16,
                   )
               ),
+              IconButton(
+                  onPressed: (){
+                    _player.play('sounds/Warning-Alarm02-1L.mp3');
+                  },
+                  icon: Icon(Icons.remove_red_eye_outlined),
+              )
             ],
           ),
         ),
