@@ -1,16 +1,6 @@
 # count_app
+StatefulWidgetで簡単なカウンターアプリ
+状態管理を学ぶ
 
-A new Flutter application.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img width="216" alt="Screenshot_20210811-205132" src="https://user-images.githubusercontent.com/73876468/129026656-762dbb2b-3c5a-4e98-88e7-f4ec30afc6fc.png">　<img width="216" alt="Screenshot_20210811-205136" src="https://user-images.githubusercontent.com/73876468/129026673-0b26f3a2-8b54-4a6f-a907-77d208ae7cab.png">　<img width="216" alt="Screenshot_20210811-205139" src="https://user-images.githubusercontent.com/73876468/129026685-ebc1d866-50ed-4708-964c-8ed9e96bdeee.png">
